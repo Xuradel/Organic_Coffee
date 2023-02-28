@@ -33,12 +33,19 @@
     src: url(fonts/EspressoDolce.ttf) format('truetype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3rem;
+    box-sizing: border-box;
+}
+
+html, body{
+    scroll-behavior: smooth;
 }
 
 header{
@@ -203,7 +210,7 @@ header a:hover{
 }
 
 .about p{
-    font-family:"Arinoe";
+    font-family:Arial, Helvetica, sans-serif;
     color: aliceblue;
     font-size: 1rem;
 }
@@ -228,20 +235,77 @@ header a:hover{
 
 
 .locations{
-    display:grid;
-
+    display:flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #F7F8F8 0%,#ACBB78 100%);
     background-size: cover;
-    background-position: center;
+    background-position: center;    
     height: 100vh;
     width: 100vw;
 }
 
+.promotext3{
+    display: flex;
+    flex-direction: column;
+}
 .locations h1{
-    color: rgb(27, 113, 189);
+    color: rgb(0, 0, 0);
+    margin-top: 1.5rem;
+    margin-bottom: -1.5rem;
+    font-family:"Kafeine";
     align-self: center;
-    justify-self: center;
 }
 
+.card3{
+    max-width: 50%;
+    height: auto;
+    margin: 2rem 2rem 0;
+    align-self: center;
+    border-image: linear-gradient(#437D6A, #058951) 30;
+    border-width: .25rem;
+    border-style: solid;
+}
+
+.container2{
+   width:100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:0 6rem;
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-section .cardImage{
+    flex:1;
+    margin:1rem 1rem;
+    box-shadow: 0 .12rem .5rem 0 rgba(0,0,0,0.2);
+}
+
+.content-section img{
+    max-width: 100%;
+    height: auto;
+}
+
+.content-section .cardImage h2{
+margin:.9rem 0;
+font-size: 1.5rem;
+color: #000000;
+font-family: sans-serif;
+}
+
+.content-section .cardImage p{
+font-size: .8rem;
+Line-height: 1.5;
+padding: 0 .6rem;
+margin-bottom: 1rem;
+}
 
 @media only screen and (max-width: 600px) {
     .banner a{
@@ -291,5 +355,13 @@ header a:hover{
     
     .title a{
         font-size: 1.2rem;
+    }
+
+    .content-section{
+        flex-direction: column;
+    }
+    .container2{
+        width:45%;
+        margin-left: 7rem;
     }
   }
