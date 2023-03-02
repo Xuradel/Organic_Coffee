@@ -186,7 +186,7 @@ header a:hover{
 .about{
     display:flex;
     background-color: #1f3a31;
-    background-image: linear-gradient(132deg, #1f3a31 0%, #03683d 100%);    
+    background-image: linear-gradient(to left, #5e5c5c 0%, rgb(24, 23, 23) 100%);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -223,12 +223,12 @@ header a:hover{
 }
 
 .card2{
-    max-width: 50%;
+    max-width: 40%;
     max-height: auto;
     margin-left: 1rem;
     margin-right: 1rem;
     align-self: center;
-    border-image: linear-gradient(#437D6A, #058951) 30;
+    border-image: linear-gradient(#6b6d6c, #0c0e0d) 30;
     border-width: 4px;
     border-style: solid;
 }
@@ -237,7 +237,7 @@ header a:hover{
 .locations{
     display:flex;
     flex-direction: column;
-    background-image: linear-gradient(to right, #F7F8F8 0%,#ACBB78 100%);
+    background-image: linear-gradient(to right, #807f7f 0%, rgb(44, 42, 42) 100%);
     background-size: cover;
     background-position: center;    
     height: 100vh;
@@ -307,6 +307,28 @@ padding: 0 .6rem;
 margin-bottom: 1rem;
 }
 
+footer{
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    padding-left: .5rem;
+}
+
+.logoC img{
+    max-width: 4rem;
+    height: auto;
+}
+footer .copyright p{
+    font-family:  "Espresso";
+    color:antiquewhite;
+}
+
+footer .socials{
+    justify-content: flex-end;
+}
+
 @media only screen and (max-width: 600px) {
     .banner a{
         font-size: .6rem;
@@ -314,6 +336,27 @@ margin-bottom: 1rem;
     .promotions {
       flex-direction: column;
     }
+    .promotext2 p{
+        font-size: .8rem;
+    }
+    .promotext2 h1{
+        font-size: 1rem;
+    }
+    .promotext2 h2{
+        font-size: 1rem;
+    }
+
+    .promotext3 h1{
+        font-size: .8rem;
+    }
+
+    .content-section .cardImage h2{
+        font-size: 1rem;
+        }
+        
+        .content-section .cardImage p{
+        font-size: .8rem;
+        }
     .about{
         flex-direction: column;
     }
@@ -357,11 +400,80 @@ margin-bottom: 1rem;
         font-size: 1.2rem;
     }
 
-    .content-section{
-        flex-direction: column;
-    }
     .container2{
         width:45%;
         margin-left: 7rem;
     }
+    footer{
+        flex-direction: column;
+        align-content: center;
+    }
+  }
+
+
+
+.wrapper .button{
+  display: inline-block;
+  height: 2.8rem;
+  width: 2.8rem;
+  margin: 0 .2rem;
+  overflow: hidden;
+  background: #343434;
+  border-radius: 2.75rem;
+  cursor: pointer;
+  box-shadow: 0 .4rem .4rem rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 8rem;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 2.8rem;
+  width: 2.8rem;
+  text-align: center;
+  border-radius: 2.5rem;
+  box-sizing: border-box;
+  line-height: 2.5rem;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+    background: #ff0000;
+  }
+
+.wrapper .button .icon i{
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin-left: .3rem;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+    color: #ff0000;
   }
